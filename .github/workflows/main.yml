@@ -27,7 +27,9 @@ jobs:
     steps:
       - name: Try testing
         run: |
-          echo A comment on PR $NUMBER
+          Run few command line
+          sleep 30
+          Done          
         env:
           NUMBER: ${{ github.event.issue.number }}
 
