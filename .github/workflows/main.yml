@@ -19,9 +19,10 @@ jobs:
         run: echo 'Completed'
 
   job3:
-     runs-on: ubuntu-latest
-      steps:
-      - run: |
+    runs-on: ubuntu-latest
+    steps:
+      - name: Try testing
+        run: |
           echo A comment on PR $NUMBER
         env:
           NUMBER: ${{ github.event.issue.number }}
