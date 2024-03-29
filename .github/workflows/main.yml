@@ -2,7 +2,9 @@
 
 name: workflow1
 on: 
-  push
+  push:
+    branches:
+      - main
 
 jobs:
   job1:
@@ -12,6 +14,8 @@ jobs:
         run: echo "hello from Ana."
       - name: step2
         run: echo "Good morning."
+      - name: step3
+        run: cat /etc/os-release
   job2:
     runs-on: ubuntu-latest
     steps:
