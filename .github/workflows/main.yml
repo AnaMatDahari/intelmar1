@@ -1,4 +1,4 @@
-# My First Worlflow
+# My First Workflow
 
 name: workflow1
 on: 
@@ -9,5 +9,11 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - name: step1
-        run: echo "hello from Ana"
-        
+        run: echo "hello from Ana."
+      - name: step2
+        run: echo "Good morning."
+  job2:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Save data
+        run: echo 'Completed'
